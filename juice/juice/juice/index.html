@@ -1,0 +1,257 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Char Dame Juice</title>
+</head>
+
+<body>
+
+    <nav id="nav">
+        <div class="navTop">
+
+            <div class="navItem">
+                <span class="webname">Char Dame <span style="color: green;">JUICE</span></span>
+            </div>
+
+            <div class="navItem">
+                <div class="search">
+                    <input type="text" placeholder="Search..." class="searchInput">
+                    <img src="./img/search.png" width="20" height="20" alt="" class="searchIcon">
+                    
+                </div>
+            </div>
+
+            
+
+        </div>
+        <div class="navBottom">
+            <h3 class="menuItem">SMOOTHIE</h3>
+            <h3 class="menuItem">COCKTAIL</h3>
+            <h3 class="menuItem">SHAKE</h3>
+            <h3 class="menuItem">RAW</h3>
+        </div>
+    </nav> 
+
+
+    <div class="slider">
+        <div class="sliderWrapper">
+            <div class="sliderItem">
+                <img src="/img/smoothie.png" alt="" class="sliderImg">
+                <div class="sliderBg"></div>
+                <h1 class="sliderTitle">SM<span class="oo">OO</span>THIE</h1>
+                <h2 class="sliderPrice">60 TK</h2>
+                <a href="#product">
+                    <button class="buyButton">BUY NOW!</button>
+                </a>
+            </div>
+
+            <div class="sliderItem">
+                <img src="/img/cocktail.png" alt="" class="sliderImg">
+                <div class="sliderBg"></div>
+                <h1 class="sliderTitle"> <span class="co">CO</span>CKTAIL</h1>
+                <h2 class="sliderPrice">70 TK</h2>
+                <a href="#product">
+                    <button class="buyButton">BUY NOW!</button>
+                </a>
+            </div>
+            <div class="sliderItem">
+                <img src="/img/shake.png" alt="" class="sliderImg">
+                <div class="sliderBg"></div>
+                <h1 class="sliderTitle">FRUITE <span class="ke">SHAKE</span> </h1>
+                <h2 class="sliderPrice">80 TK</h2>
+                <a href="#product">
+                    <button class="buyButton">BUY NOW!</button>
+                </a>
+            </div>
+            <div class="sliderItem">
+                <img src="/img/RAW.png" alt="" class="sliderImg">
+                <div class="sliderBg"></div>
+                <h1 class="sliderTitle"><span class="RAW">RAW</span> FRUITE</h1>
+                <h2 class="sliderPrice">100 TK</h2>
+                <a href="#product">
+                    <button class="buyButton">BUY NOW!</button>
+                </a>
+            </div>
+            
+        
+        </div>
+    </div>
+   
+
+
+    <div class="features">
+        <div class="feature">
+            <img src="./img/shipping.png" alt="" class="featureIcon">
+            <span class="featureTitle">FREE SHIPPING</span>
+            <span class="featureDesc">Free worldwide shipping on all orders.</span>
+        </div>
+        <div class="feature">
+            <img class="featureIcon" src="./img/return.png" alt="">
+            <span class="featureTitle">30 DAYS RETURN</span>
+            <span class="featureDesc">No question return and easy refund in 14 days.</span>
+        </div>
+        <div class="feature">
+            <img class="featureIcon" src="./img/gift.png" alt="">
+            <span class="featureTitle">GIFT CARDS</span>
+            <span class="featureDesc">Buy gift cards and use coupon codes easily.</span>
+        </div>
+        <div class="feature">
+            <img class="featureIcon" src="./img/contact.png" alt="">
+            <span class="featureTitle">CONTACT US!</span>
+            <span class="featureDesc">Keep in touch via email and support system.</span>
+        </div>
+    </div>
+
+
+
+    <div class="product" id="product">
+        <img src="/img/mint.png" alt="" class="productImg">
+        <div class="productDetails">
+            <h1 class="productTitle">Lemon Mint</h1>
+            <h2 class="productPrice">60tk</h2>
+            <p class="productDesc">We collect from nature and no harmful item mix. </p>
+            
+            <div class="sizes">
+                <div class="size">Small</div>
+                <div class="size">Medium</div>
+                <div class="size">Large</div>
+                <div class="size">Extra Large</div>
+            </div>
+            <button class="productButton">BUY NOW!</button>
+        </div>
+
+        <div class="payment">
+            <payment action="connect.php" method="post">
+            <h1 class="payTitle">Personal Details</h1>
+            <label>Name:</label>
+            <input type="text" placeholder="Enter Name" class="payInput" name="FullName">
+            <br>
+            <label>Contact Number:</label>
+            <input type="number" placeholder="+880" class="payInput" name="CellNumber">
+            <br> 
+            <label>Address:</label>
+            <input type="text" placeholder="Enter Your Address" class="payInput" name="Location">
+            <h1 class="payTitle">Card Information</h1>
+            <div class="cardIcons">
+                <img src="./img/visa.png" width="40" alt="" class="cardIcon">
+                <img src="./img/master.png" alt="" width="40" class="cardIcon">
+            </div>
+            <input type="password" class="payInput" placeholder="Card Number" name="CardNumber">
+            <div class="cardInfo">
+                <input type="text" placeholder="dd" class="payInput sm" name="Month">
+                <input type="text" placeholder="mm" class="payInput sm" name="Year">
+                <input type="text" placeholder="yyyy" class="payInput sm" name="Credit Verification">
+            </div>
+            <button class="payButton">Checkout!</button>
+            <span class="close">X</span>
+            </payment>
+        </div>
+    </div>
+
+    <div class="gallery">
+        <div class="galleryItem">
+            <h1 class="galleryTitle">Fresh Juice!</h1>
+            <img src="/img/fresh.jpg"
+                alt="" class="galleryImg">
+        </div>
+        <div class="galleryItem">
+            <img src="/img/nature.jpg"
+                alt="" class="galleryImg">
+            <h1 class="galleryTitle">We Collect From Nature</h1>
+        </div>
+        <div class="galleryItem">
+            <h1 class="galleryTitle">Drink Juice Get Energy</h1>
+            <img src="/img/energy.jpg"
+                alt="" class="galleryImg">
+        </div>
+    </div>
+
+
+    <div class="newSeason">
+
+        <div class="nsItem">
+            <img src="/img/back1.jpg"
+                alt="" class="nsImg">
+        </div>
+
+        <div class="nsItem">
+            <h3 class="nsTitleSm">SEASONAL FRUITE JUICE</h3>
+            
+            <h1 class="nsTitle">Collection</h1>
+            <a href="#nav">
+                <button class="nsButton">GRAB CHOOSE</button>
+            </a>
+        </div>
+
+        <div class="nsItem">
+            <img src="/img/back2.jpg"
+                alt="" class="nsImg">
+        </div>
+
+    </div>
+
+    <footer>
+        <div class="footerLeft">
+            <div class="footerMenu">
+                <h1 class="fMenuTitle">About Us</h1>
+                <ul class="fList">
+                    <li class="fListItem">Company</li>
+                    <li class="fListItem">Contact</li>
+                    <li class="fListItem">Careers</li>
+                    <li class="fListItem">Affiliates</li>
+                    <li class="fListItem">Stores</li>
+                </ul>
+            </div>
+            <div class="footerMenu">
+                <h1 class="fMenuTitle">Useful Links</h1>
+                <ul class="fList">
+                    <li class="fListItem">Support</li>
+                    <li class="fListItem">Refund</li>
+                    <li class="fListItem">FAQ</li>
+                    <li class="fListItem">Feedback</li>
+                    <li class="fListItem">Stories</li>
+                </ul>
+            </div>
+            <div class="footerMenu">
+                <h1 class="fMenuTitle">Products</h1>
+                <ul class="fList">
+                    <li class="fListItem">Smoothie Juice</li>
+                    <li class="fListItem">Raw Juice</li>
+                    <li class="fListItem">Shake</li>
+                    <li class="fListItem">Cocktail</li>
+                </ul>
+            </div>
+        </div>
+        <div class="footerRight">
+            <div class="footerRightMenu">
+                <h1 class="fMenuTitle">Support our Team</h1>
+                <div class="fMail">
+                    <input type="text" placeholder="your@email.com" class="fInput">
+                    <button class="fButton">Join!</button>
+                </div>
+            </div>
+            <div class="footerRightMenu">
+                <h1 class="fMenuTitle">Follow Us</h1>
+                <div class="fIcons">
+                    <img src="./img/facebook.png" alt="" class="fIcon">
+                    <img src="./img/twitter.png" alt="" class="fIcon">
+                    <img src="./img/instagram.png" alt="" class="fIcon">
+                    <img src="./img/whatsapp.png" alt="" class="fIcon">
+                </div>
+            </div>
+            <div class="footerRightMenu">
+                <span class="copyright">@sajid. copy right . 2023.</span>
+            </div>
+        </div>
+    </footer>
+    <script src="./app.js"></script>
+</body>
+
+</html>
